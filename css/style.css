@@ -1,0 +1,427 @@
+body{
+	margin : 0px;
+	padding : 0px;
+}
+a{
+	text-decoration : none;
+}
+li{
+	list-style-type: none;
+}
+.active{
+	display : flex;
+}
+.inactive{
+	display : none;
+}
+.show{
+	display : block;
+}
+.imgburger{
+	background-image : url('../img/glyphicons-114-justify.png');
+	background-repeat : no-repeat;
+	background-position : 50% 50%;
+}
+.imgdelburger{
+	background-image : url('../img/glyphicons-208-remove.png');
+	background-repeat : no-repeat;
+	background-position : 50% 50%;
+}
+.pull-left{
+	float : left;
+}
+.pull-right{
+	float : right;
+}
+.text-center{
+	text-align : center;
+}
+.bar{
+	background-color : #ecf0f1;
+	height : 50px;
+	width : auto;
+	margin-bottom : 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.container{	
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding : 20px 20px 20px 20px;
+	background-color : #ecf0f1;
+}
+
+/****************/
+/****CSS MENU****/
+/****************/
+#logo{
+	position : absolute;
+	top : 5px;
+	left : 5px;
+	height : 40px;
+	width : 200px;
+	background-image : url('http://fakeimg.pl/200x40/3498db/000/?text=Logo&font=lobster&size=200');
+	background-repeat : no-repeat;
+	background-size : cover;
+}
+#items{
+	position : absolute;
+	top : 5px;
+	right : 5px;
+	height : 40px;	
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+#items ul{
+	margin: auto;
+	padding: 0;
+}
+#items li{
+	display : inline;
+}
+#items a{
+	color : #3498db;
+}
+#bar-search{
+	margin: auto;
+}
+#bar-search #bouton{	
+	height : 21px;
+	width : 21px;
+	background-color : transparent;
+	border : 1px solid transparent;
+	cursor : Pointer;
+	background-image : url('../img/glyphicons-28-search.png');
+	background-size : cover;
+	background-repeat : no-repeat;
+}
+#bar-search #champ{
+	display: inline-block;
+	vertical-align : top;
+	border-radius : 5px;
+	border : 1px solid transparent;
+}
+
+#items li:after{
+	content : ' | ';
+	font-weight : bold;
+	font-size : 18px;
+	color : #2980b9;
+}
+#items li:last-child:after{
+	content : '';
+	margin-right : 50px;
+}
+#burger{
+	display : none;
+}
+#tel{
+	display ; none;
+}
+
+
+
+/*****************/
+/****BOX IMAGE****/
+/*****************/
+#box1{
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	box-shadow : 0px 0px 5px #888888;
+	margin-bottom : 20px;
+}
+#box1 img{	
+	min-height:0;	
+	min-width:0;
+	width : 100%;
+	display : block;
+}
+
+/*****************/
+/****BOX TEXTE****/
+/*****************/
+#box2{
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+}
+#box2 p{
+	margin-top : 0;
+}
+
+/***********************/
+/****BOX BLOCK IMAGE****/
+/***********************/
+#box3{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+	justify-content : space-around;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-bottom : 50px;
+}
+#box3-1{
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+	background-color : #ecf0f1;	
+	padding : 5px 5px 20px 5px;
+	box-shadow : 0px 0px 5px #888888;
+	margin-top : 30px;	
+}
+#img-box3{
+	height : 200px;
+	width : 242px;
+}
+
+
+/**********************/
+/****BOX FORMULAIRE****/
+/**********************/
+#box4{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+	justify-content : space-around;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+#box4 h2{	
+	margin-top : 0;
+}
+#box4-1{
+	width : 45%;
+	height : 500px;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+}
+#map{
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: auto auto auto auto; 	
+	max-width:100%;
+}
+#separator{
+	height : 450px;
+	width : 5px;
+	background-color : black;
+	border-radius : 100%;
+	margin : auto;
+}
+#box4-2{
+	width : 45%;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	-webkit-flex-direction: row;
+    flex-direction: row;
+}
+#box4-2 h2{
+	margin-bottom : 0;
+}
+#input1,#input2,#input3,#input4 {
+	height : 20px;
+	width : 49%;	
+	margin-bottom : 20px;
+	border-radius : 5px;
+	border : 1px solid transparent;
+}
+#input5 ,#input6{
+	height : 20px;
+	width : 100%;
+	margin-bottom : 20px;
+	border-radius : 5px;
+	border : 1px solid transparent;
+}
+
+textarea{
+	height : 200px;
+	width : 100%;
+	border-radius : 5px;
+	border : 1px solid transparent;
+	margin-bottom : 20px;
+}
+#bouton-valid{
+	height : 30px;
+	width : 100%;
+	border-radius : 5px;
+	border : 1px solid transparent;
+	background-color : #3498db;
+	color : white;
+}
+
+/******************/
+/****OLD FORM****/
+/******************/
+#show-old-form{
+	margin-top : 10px;
+	cursor : Pointer; 
+	color : #3498db;
+}
+#show-old-form:hover{
+	font-weight : bold;
+	color : #f1c40f;
+	text-decoration : underline;
+}
+#old-form{
+	padding : 10px 10px 10px 10px;
+	margin-left : auto;
+	margin-right : auto;	
+}
+#old-form span{
+	font-weight : bold;
+}
+#s1, #s2, #s3, #s4, #s5, #s6, #s7{
+	font-weight : none;
+	color : #3498db;
+}
+
+/******************/
+/****CSS FOOTER****/
+/******************/
+#footer{
+	margin-top : 20px;
+	width : 100%;
+	height : 50px;
+	background-color : #ecf0f1;
+	display : flex;
+}
+#footer p{
+	color: black;
+	margin: auto;
+	padding: 0;
+	font-size : 13px;
+}
+
+/**************************/
+/****MEDIA QUERY MOBILE****/
+/**************************/
+
+@media screen and (max-width: 760px){
+	#humburger {
+		background-color : #bdc3c7;
+		margin-top : -20px;
+		margin-bottom : 20px;
+	}
+	#humburger #humItems{
+		margin : auto;
+		padding : 0;
+	}
+	#humburger #humItems ul li{	
+		text-align : center;
+		margin-left : -40px;
+		margin-bottom : 10px;
+	}
+	#humburger #humItems ul li a{	
+		color : #2c3e50;
+		font-weight : bold;
+	}
+	#separator{
+		display : none;
+	}
+	#humburger #humItems form{
+		
+		margin-bottom : 10px;
+	}
+	#box4-1{
+		width : 100%;
+		margin-bottom : 30px;
+	}
+	#box4-2{
+		width : 100%;
+	}
+	#box4-2 h2{
+		width : 100%;
+		margin-bottom : 20px;
+	}
+	#input1,#input2,#input3,#input4{
+		width : 100%;
+	}
+	.bar{
+		height : 100%;
+		flex-direction : initial;
+		justify-content : space-around;
+		padding-top : 10px;
+		padding-bottom : 10px;
+	}
+	#logo{
+		position : initial;
+		height : 50px;
+		background-position : 50% 50%;
+	}	
+	#items{
+		display : none;		
+	}
+	#burger{	
+		display : block;
+		width : 50px;
+		height : 50px;
+	}
+	#tel{
+		width : 50px;
+		height : 50px;
+		background-image : url('../img/glyphicons-443-earphone.png');
+		background-repeat : no-repeat;
+		background-position : 50% 50%;
+	}
+}
+
+/****************************/
+/****MEDIA QUERY TABLETTE****/
+/****************************/
+@media screen and (max-width: 1025px) and (min-width: 759px){
+
+	#input1,#input2,#input3,#input4{
+		width : 100%;
+	}
+	.bar{
+		height : 100%;
+		padding-top : 10px;
+		padding-bottom : 10px;
+	}
+	#logo{
+		position : initial;
+		display : block;
+		margin-left : auto;
+		margin-right : auto;
+		margin-bottom : 10px;
+	}
+	#items{
+		position : initial;
+		width : 100%;
+	}
+	#items ul{
+		margin-right : 0;
+	}
+	#items li:last-child:after{
+		margin-right : 15px;
+	}
+	#bar-search{
+		margin-left : 0;
+		padding-left : 15px;
+	}
+	#box4-2 h2{
+		margin-bottom : 20px;
+	}
+}
